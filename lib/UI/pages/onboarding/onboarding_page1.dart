@@ -65,7 +65,7 @@ class OnboardingPageOne extends StatelessWidget {
               children: [
                 TextButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, "/OnboardingP2");
+                      Navigator.pushNamed(context, "/Signin");
                     },
                     child:
                     Text('Skip', style: AppStyle.txtInterSemiBold12)),
