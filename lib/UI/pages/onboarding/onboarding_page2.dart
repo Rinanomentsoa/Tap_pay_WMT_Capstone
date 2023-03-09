@@ -67,36 +67,36 @@ class OnboardingPageTwo extends StatelessWidget {
                 children: [
                   Expanded(
                       child: GestureDetector(
-                    onTap: () {
-                      Navigator.pushNamed(context, "/Signup");
-                    },
-                    child: CustomButton(
-                      height: getVerticalSize(
-                        44,
-                      ),
-                      text: "Join Tap’Pay".tr,
-                      margin: getMargin(
-                        right: 12,
-                      ),
-                      shape: ButtonShape.RoundedBorder8,
-                    ),
-                  )),
+                        onTap: () {
+                          Navigator.pushNamed(context, "/Signup");
+                        },
+                        child: CustomButton(
+                          height: getVerticalSize(
+                            44,
+                          ),
+                          text: "Join Tap’Pay".tr,
+                          margin: getMargin(
+                            right: 12,
+                          ),
+                          shape: ButtonShape.RoundedBorder8,
+                        ),
+                      )),
                   Expanded(
                       child: GestureDetector(
-                    onTap: () {Navigator.pushNamed(context, "/Signin");},
-                    child: CustomButton(
-                      height: getVerticalSize(
-                        44,
-                      ),
-                      text: "Login".tr,
-                      margin: getMargin(
-                        left: 12,
-                      ),
-                      variant: ButtonVariant.OutlineIndigo500,
-                      shape: ButtonShape.RoundedBorder8,
-                      fontStyle: ButtonFontStyle.PoppinsMedium14Indigo500,
-                    ),
-                  )),
+                        onTap: () {Navigator.pushNamed(context, "/Signin");},
+                        child: CustomButton(
+                          height: getVerticalSize(
+                            44,
+                          ),
+                          text: "Login".tr,
+                          margin: getMargin(
+                            left: 12,
+                          ),
+                          variant: ButtonVariant.OutlineIndigo500,
+                          shape: ButtonShape.RoundedBorder8,
+                          fontStyle: ButtonFontStyle.PoppinsMedium14Indigo500,
+                        ),
+                      )),
                 ],
               ),
             ),

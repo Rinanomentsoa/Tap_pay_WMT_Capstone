@@ -27,30 +27,50 @@ class _ScanPageState extends State<ScanPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: ListView(
         children: [
-          SvgPicture.asset(ImageConstant.scanIcon,height:200, width:200),
-          Container(
-            margin: const EdgeInsets.fromLTRB(75, 10, 75, 30),
-            height: 45,
-            child: ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, "/Paiement");
-              },
-              style: ButtonStyle(
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(7.0),
-                      ))),
-              child: const Text(
-                'Next',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.white,
-                  fontFamily: 'Poppins',
+          Padding(
+            padding: EdgeInsets.fromLTRB(14, 72, 14, 32),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(bottom:28.0),
+                  child: Text(
+                    'Start scanning',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w900,
+                      color: Colors.black54,
+                      fontFamily: 'Poppins',
+                    ),
+                  ),
                 ),
-              ),
+                SvgPicture.asset(ImageConstant.scanIcon,height:250, width:250),
+                Container(
+                  margin: const EdgeInsets.fromLTRB(75, 80, 75, 30),
+                  height: 45,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, "/Paiement");
+                    },
+                    style: ButtonStyle(
+                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(7.0),
+                            ))),
+                    child: const Text(
+                      'Next',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w400,
+                        color: Colors.white,
+                        fontFamily: 'Poppins',
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
         ],

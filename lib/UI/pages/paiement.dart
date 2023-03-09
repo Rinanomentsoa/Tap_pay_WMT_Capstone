@@ -21,6 +21,13 @@ class _PaiementScreenState extends State<PaiementScreen> {
       text: 'Transaction Completed Successfully!',
     );
   }
+  void showCancelledDialog(){
+    QuickAlert.show(
+      context: context,
+      type: QuickAlertType.error,
+      text: " wrong person? \n Don't worry, transaction cancelled !",
+    );
+  }
   //variables
   @override
   Widget build(BuildContext context) {
@@ -147,7 +154,7 @@ class _PaiementScreenState extends State<PaiementScreen> {
                   ),
                   GestureDetector(
                     onTap: (){
-                      Navigator.pushNamed(context, "/Home");
+                      showCancelledDialog();
                     },
                     child: Container(
                       height: 50,
