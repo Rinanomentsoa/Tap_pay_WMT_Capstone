@@ -1,0 +1,71 @@
+name: tap_pay_app
+description: A new Flutter project.
+version: 1.0.0+1
+environment: 
+  sdk: '>=2.12.0 <3.0.0'
+dependencies: 
+  flutter: 
+    sdk: flutter
+  get: ^4.6.5
+  connectivity_plus: ^2.3.6
+  shared_preferences: ^2.0.15
+  cached_network_image: ^3.2.1
+  sms_autofill: ^2.0.0
+  url_launcher: 6.0.20
+  flutter_svg: ^1.1.6
+  flutter_svg_provider: ^1.0.3
+  pin_code_fields: ^7.3.0
+  pin_input_text_field: 4.1.0
+  intl: ^0.17.0
+  smooth_page_indicator: ^1.0.1
+  country_picker: ^2.0.19
+  fl_country_code_picker: ^0.1.2
+  flutter_native_splash: ^2.2.18
+  qr_code_scanner: ^1.0.1
+  quickalert: ^1.0.1
+
+
+dev_dependencies: 
+  flutter_test: 
+    sdk: flutter
+  flutter_launcher_icons: ^0.12.0
+flutter_native_splash:
+  color: "#3567C3"
+  image: assets/images/img_tappayiconwhite.png
+pin_code_fields:
+fl_country_code_picker:
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon.png"
+flutter: 
+  uses-material-design: true
+  assets: 
+    - assets/
+    - assets/images/
+    - assets/images/one.png
+    - assets/icons/
+  fonts: 
+    - family: Poppins
+      fonts: 
+        - asset: assets/fonts/PoppinsMedium.ttf
+          weight: 500
+        - asset: assets/fonts/PoppinsSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/PoppinsRegular.ttf
+          weight: 400
+        - asset: assets/fonts/PoppinsBold.ttf
+          weight: 700
+    - family: Inter
+      fonts: 
+        - asset: assets/fonts/InterRegular.ttf
+          weight: 400
+        - asset: assets/fonts/InterSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/InterMedium.ttf
+          weight: 500
+    - family: Solway
+      fonts: 
+        - asset: assets/fonts/SolwayBold.ttf
+          weight: 700
