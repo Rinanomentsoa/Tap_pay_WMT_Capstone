@@ -83,7 +83,7 @@ class OnboardingPageTwo extends StatelessWidget {
                   )),
                   Expanded(
                       child: GestureDetector(
-                    onTap: () {},
+                    onTap: () {Navigator.pushNamed(context, "/Signin");},
                     child: CustomButton(
                       height: getVerticalSize(
                         44,
