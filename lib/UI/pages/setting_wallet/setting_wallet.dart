@@ -26,7 +26,9 @@ class _SettingWalletsState extends State<SettingWallets> {
             children: [
               Align(
                 alignment: Alignment.topRight,
-                  child: TextButton(onPressed: (){}, child: Text('Skip',style:TextStyle(
+                  child: TextButton(onPressed: (){
+                    Navigator.pushNamed(context, "/Home");
+                  }, child: Text('Skip',style:TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w700,
                     color: Colors.black87,
