@@ -164,7 +164,7 @@ class _HomeSectionState extends State<HomeSection> {
           //INNER SQUARE
 
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 40),
+            padding: const EdgeInsets.fromLTRB(40,30,40,10),
             child: Column(
               children: [
                 //SERVICES

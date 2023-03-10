@@ -45,7 +45,7 @@ class _VerifyScreenState extends State<VerifyScreen> {
               ),
               //PIN
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30,vertical:35),
+                padding: const EdgeInsets.symmetric(horizontal: 17,vertical:35),
                 child: PinCodeTextField(
                   keyboardType: TextInputType.number,
                   appContext: context,

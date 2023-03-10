@@ -44,7 +44,7 @@ class _CreatePinCodeState extends State<CreatePinCode> {
               ),
               //PIN BOX
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30,vertical:35),
+                padding: const EdgeInsets.symmetric(horizontal: 17,vertical:35),
                 child: PinCodeTextField(
                     keyboardType: TextInputType.number,
                     appContext: context,
@@ -66,7 +66,7 @@ class _CreatePinCodeState extends State<CreatePinCode> {
               ),
 
               Container(
-                margin: const EdgeInsets.fromLTRB(0, 70, 0, 10),
+                margin: const EdgeInsets.fromLTRB(0, 100, 0, 10),
                 height: 45,
                 child: ElevatedButton(
                   onPressed: () {

@@ -25,7 +25,7 @@ class _PaiementScreenState extends State<PaiementScreen> {
     QuickAlert.show(
       context: context,
       type: QuickAlertType.error,
-      text: " wrong person? \n Don't worry, transaction cancelled !",
+      text: " Wrong person or an error? \n Don't worry, transaction cancelled !",
     );
   }
   //variables

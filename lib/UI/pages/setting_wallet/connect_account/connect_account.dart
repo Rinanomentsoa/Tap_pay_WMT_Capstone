@@ -15,7 +15,7 @@ class _ConnectAccountState extends State<ConnectAccount> {
     QuickAlert.show(
       context: context,
       type: QuickAlertType.success,
-      text: 'Transaction Completed Successfully!',
+      text: 'Your wallet is successfully linked to your existing bank account!',
     );
   }
   @override
