@@ -76,30 +76,32 @@ class _SettingWalletsState extends State<SettingWallets> {
                   vertical: 15,
                   horizontal: 10,
                 ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(10, 20, 10, 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                         BoxButton("/AddCard",'Create Tap’pay \n virtual card', Color(0xFFFFF3CD), ImageConstant.onePic),
-                          BoxButton("/RequestUnitCard",'Request Tap’pay \n unit card', Color(0xFFE0EBFF), ImageConstant.twoPic),
-                        ],
+                child: Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(10, 20, 10, 10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                           BoxButton("/AddCard",'Create Tap’pay \n virtual card', Color(0xFFFFF3CD), ImageConstant.onePic),
+                            BoxButton("/RequestUnitCard",'Request Tap’pay \n unit card', Color(0xFFE0EBFF), ImageConstant.twoPic),
+                          ],
+                        ),
                       ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          BoxButton("/Card",'Connect \n credit cards', Color(0xFFE0EBFF), ImageConstant.threePic),
-                          BoxButton("/ConnectAccounts",'Connect \n bank accounts', Color(0xFFFFF3CD), ImageConstant.fourPic),
-                        ],
-                      ),
-                    )
-                  ],
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            BoxButton("/Card",'Connect \n credit cards', Color(0xFFE0EBFF), ImageConstant.threePic),
+                            BoxButton("/ConnectAccounts",'Connect \n bank accounts', Color(0xFFFFF3CD), ImageConstant.fourPic),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               )
             ],
