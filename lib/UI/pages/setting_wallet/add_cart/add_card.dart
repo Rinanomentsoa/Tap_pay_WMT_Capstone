@@ -103,7 +103,7 @@ class _AddCardState extends State<AddCard> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   contentField('Expiry date', 200, TextInputType.datetime),
-                  contentField('CVV', 70, TextInputType.number),
+                  contentField('CVV', 100, TextInputType.number),
                 ],
               ),
 

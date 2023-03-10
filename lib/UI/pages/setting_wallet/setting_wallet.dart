@@ -74,10 +74,10 @@ class _SettingWalletsState extends State<SettingWallets> {
               Padding(
                 padding: const EdgeInsets.symmetric(
                   vertical: 15,
-                  horizontal: 10,
                 ),
                 child: Center(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Padding(
@@ -119,8 +119,8 @@ class _SettingWalletsState extends State<SettingWallets> {
           Navigator.pushNamed(context, route);
         },
         child: Container(
-            height: 165,
-            width: 155,
+            height: 155,
+            width: 145,
             decoration: BoxDecoration(
                 color: boxColor,
                 borderRadius: BorderRadius.circular(10),
@@ -145,7 +145,7 @@ class _SettingWalletsState extends State<SettingWallets> {
                       color: Colors.black87,
                       fontWeight: FontWeight.w500,
                       fontFamily: 'Poppins',
-                      fontSize: 17,
+                      fontSize: 15,
                     ),
                   ),
                 ],
